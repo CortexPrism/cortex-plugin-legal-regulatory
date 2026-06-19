@@ -1,0 +1,30 @@
+{
+  "name": "cortex-plugin-legal-regulatory",
+  "version": "1.0.0",
+  "description": "Legal & Regulatory Data Miner — FDA/SEC EDGAR/USPTO/EU legislation search and regulatory change tracking",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-legal-regulatory",
+  "homepage": "https://cortexprism.io/marketplace/plugins/legal-regulatory",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "regulatory_search", "description": "Search regulatory databases", "params": [] },
+    {
+      "name": "regulatory_track_changes",
+      "description": "Track regulatory changes affecting product",
+      "params": []
+    },
+    {
+      "name": "regulatory_analyze_patents",
+      "description": "Analyze competitor patent filings",
+      "params": []
+    },
+    { "name": "regulatory_summarize", "description": "Summarize legal document", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
